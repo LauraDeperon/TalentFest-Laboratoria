@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/firestore';
 
 import { BrowserRouter } from 'react-router-dom';
 import Routes from './routes.js';
@@ -17,6 +18,9 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+export default db
 
 ReactDOM.render(
   <BrowserRouter>

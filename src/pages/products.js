@@ -1,10 +1,12 @@
 import './products.css';
+import getProducts from '../services/database'
+
 
 function Products() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <h1>Olá</h1>
+        <button onClick={() => getProducts()}></button>
       </header>
     </div>
   );
