@@ -1,5 +1,10 @@
 import './products.css';
+
+import Category from '../components/category'
+import Footer from '../components/footer'
+import Header from '../components/header'
 import getProducts from '../services/database'
+
 
 
 function Products() {
@@ -8,6 +13,10 @@ function Products() {
       <header className='App-header'>
         <button onClick={() => getProducts()}></button>
       </header>
+     <Header/>
+      <Category/>
+      <Footer/>
+
     </div>
   );
 }
