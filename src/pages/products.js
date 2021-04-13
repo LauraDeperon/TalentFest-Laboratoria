@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import getProducts from "../services/database"
 import './products.css';
+import Category from '../components/category'
+import Footer from '../components/footer'
+import Header from '../components/header'
+
+
+
 
 function Products() {
 
@@ -32,10 +38,13 @@ console.log(products)
             )
           })} */}
         </header>
+        <Header/>
+      <Category/>
+      <Footer/>
+
       </div>
     </>
   )
-
 }
 
 
