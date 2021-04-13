@@ -5,12 +5,32 @@ import Category from '../components/category'
 import Footer from '../components/footer'
 import Header from '../components/header'
 
-
-
-
 function Products() {
 
   const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    
+    getProducts().then((result) => {
+      result.docs.forEach((doc) => {
+         setProducts(obj => [...obj, doc.data()]);
+            })
+      
+    })
+    console.log(products)
+  }, [])
+
+console.log(products)
+  return (
+    <div className='App'>
+      <header className='App-header'>
+        <button onClick={() => getProducts()}></button>
+      </header>
+      <Header/>
+      <Category/>
+      <Footer/>
+    </div>
+  );
 
   useEffect(() => {
     if (products.length === 0){
@@ -41,10 +61,7 @@ function Products() {
       </div>
     </>
   )
+
 }
-
-
-
-
 
 export default Products;
