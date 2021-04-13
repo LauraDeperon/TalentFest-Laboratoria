@@ -31,8 +31,8 @@ function Products() {
         {products.map((item) => {
           return (
             <div key={item.id}>
-              <p>{item.image}</p>
-              {/* <p>{item.name}</p> */}
+              {/* <p>{item.image}</p> */}
+              <p>{item.name}</p>
               {/* <button onClick={() => ProductsInformation item={item}}>ver</button> */}
             </div>
           )
