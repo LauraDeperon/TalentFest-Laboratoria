@@ -1,8 +1,7 @@
 import db from '../index';
 
-const getProducts = async () => {
-  try {
-    const result = await db.collection('products').get();
+const getProducts = () => {
+  return  db.collection('products').get();
     // console.log(
     //   result.docs.forEach((doc) => {
     //     console.log(
@@ -12,14 +11,14 @@ const getProducts = async () => {
     //     );
     //   })
     // );
-    console.log(
-      result.docs.forEach((doc) => {
-        console.log(doc.data().name);
-      })
-    );
-  } catch (error) {
-    console.log(error);
-  }
-};
-
+  //   console.log(
+  //     result.docs.forEach((doc) => {
+  //       console.log(doc.data().name);
+  //     })
+  //   );
+  // } catch (error) {
+  //   console.log(error);
+  // }
+// };
+}
 export default getProducts;
