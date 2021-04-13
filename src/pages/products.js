@@ -12,36 +12,32 @@ function Products() {
 
   const [products, setProducts] = useState([]);
 
-
   useEffect(() => {
-    
-    getProducts().then((result) => {
-      result.docs.forEach((doc) => {
-         setProducts(obj => [...obj, doc.data()]);
-            })
-      
-    })
-    console.log(products)
-  }, [])
+    if (products.length === 0){
+      getProducts().then((result) => {
+        result.docs.forEach((doc) => {
+          setProducts(obj => [...obj, doc.data()]);
+        })
+      })
+    }
+  }, [products])
 
-console.log(products)
   return (
     <>
+      <Header />
+      <Category />
       <div className='App'>
-        <header className='App-header'>
-          <h1>Olá</h1>
-          <button onClick={() => {console.log(getProducts())}}>click</button>
-{/*           {products.(function (item) {
-            return (
-              <div key={item.id}>
-              </div>
-            )
-          })} */}
-        </header>
-        <Header/>
-      <Category/>
-      <Footer/>
-
+        <h1>Olá</h1>
+        {products.map((item) => {
+          return (
+            <div key={item.id}>
+              {/* <p>{item.image}</p> */}
+              <p>{item.name}</p>
+              {/* <button onClick={() => ProductsInformation item={item}}>ver</button> */}
+            </div>
+          )
+        })}
+        <Footer />
       </div>
     </>
   )
