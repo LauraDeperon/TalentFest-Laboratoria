@@ -1,21 +1,15 @@
 import React from 'react';
 import './productsInformation.css';
-import Footer from '../footer';
-import Header from '../header';
 
-function productsInformation({product}) {
+function productsInformation({ item }) {
   return (
     <>
       <div className='App'>
-        <Header />
-        <p>{product.name}</p>
-        <p>{product.brand}</p>
-        <p>{product.description}</p>
-        {product.processes.map((process) => (
-          <p>{process}</p>
-        ))}
-        <p>{product.recipe}</p>
-        <Footer />
+        <p>{item.name}</p>
+        <p>{item.brand}</p>
+        <p>{item.description}</p>
+        {item.processes.map((process) => console.log(process))}
+        <p>{item.recipe}</p>
       </div>
     </>
   );
