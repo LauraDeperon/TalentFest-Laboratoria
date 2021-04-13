@@ -4,7 +4,7 @@ import './products.css';
 import Category from '../components/category';
 import Footer from '../components/footer';
 import Header from '../components/header';
-import productsInformation from '../components/productsInformation/productsInformation';
+import productsInformation from '../components/productsInformation/productsInformation'
 
 function Products() {
   const [products, setProducts] = useState([]);
