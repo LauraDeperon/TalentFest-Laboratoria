@@ -2,6 +2,9 @@ import Logo from '../imagens/logo.png';
 import Close from '../imagens/close.png';
 import Modal from 'react-modal';
 import { useState } from 'react';
+Modal.setAppElement('#root')
+
+Modal.setAppElement('#root')
 
 Modal.setAppElement('#root')
 
@@ -23,6 +26,7 @@ function Header() {
             <p>A Cargill oferece serviços e produtos alimentícios, agrícolas, financeiros e industriais ao mundo.
             Juntamente com produtores rurais, clientes, governos e comunidades, ajudamos as pessoas a prosperar com a aplicação de nossas ideias há mais de 155 anos. Temos 155.000 funcionários em 70 países, que estão comprometidos a fornecer alimentos ao mundo de uma forma responsável, reduzindo o impacto ambiental e melhorando as comunidades onde atuamos.
             </p>
+            <button onClick={closeModalSobre}><img src={Close} alt='' /></button>
           </Modal>
         </nav>
       </header>
