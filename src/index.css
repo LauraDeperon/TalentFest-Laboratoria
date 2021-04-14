@@ -9,6 +9,7 @@ Tablet paisagem e Desktop -- min-width: 900px
 */
 
 /* CSS RESET */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -16,6 +17,7 @@ Tablet paisagem e Desktop -- min-width: 900px
 }
 
 /* GENERAL STYLING */
+
 html {
 	height: 100%;
 	width: 100%;
@@ -34,6 +36,11 @@ body {
 input,
 button {
 	font-family: "Work Sans", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #20211b;
 }
 
 .navbar {
@@ -82,6 +89,7 @@ button {
 }
 
 .img-close {
+	cursor: pointer;
 	width: 1.8rem;
 	height: auto;
 	background-color: #d5ed50;
@@ -91,7 +99,7 @@ button {
 
 .category-title {
 	margin-top: 2.2rem;
-	margin-left: 1.2rem;
+	margin-left: 0.7rem;
 	margin-bottom: 1rem;
 	font-size: 1.2rem;
 	font-weight: 500;
@@ -99,32 +107,68 @@ button {
 .category {
 	display: flex;
 	justify-content: space-evenly;
-	margin: 0 auto;
+	margin: 1rem 0.7rem;
 	align-items: center;
 }
 
 .img-product-category {
 	margin-top: 0.5rem;
 	border-radius: 0.3rem;
-	width: 3.5rem;
+	width: 3rem;
 	height: auto;
 	flex-grow: 1;
 }
 
 .product-category {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	font-weight: 500;
+	margin-top: 0.3rem;
 }
 
 .category-info {
-	width: 10rem;
+	width: 5rem;
 	text-align: center;
 }
 
+/* PRODUCT CARD */
+
+.product-card {
+	width: 92vw;
+	height: auto;
+	background-color: #e1ed9c;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 10px 10px 10px 10px;
+	margin: 1.5rem auto;
+	cursor: pointer;
+}
+
+.img-product-card {
+	border-radius: 10px 10px 0 0;
+	flex-grow: 1;
+}
+
+.text-product-card {
+	text-align: center;
+	padding: 0.4rem 0;
+	font-size: 1rem;
+	font-weight: 500;
+	margin-top: 0.3rem;
+}
+
+/* PRODUCT DETAILS */
+
+.img-product {
+	background-color: purple;
+	width: 65vw;
+	height: auto;
+}
+
 /* FOOTER */
+
 .footer {
 	width: 100vw;
-	position: fixed;
 	bottom: 0;
 	padding: 0.4rem;
 	text-align: center;

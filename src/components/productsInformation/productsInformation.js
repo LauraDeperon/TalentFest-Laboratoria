@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { IoIosArrowBack } from "react-icons/io";
 
 function productsInformation() {
   const itemName = localStorage.getItem('itemName');
@@ -11,9 +12,11 @@ function productsInformation() {
   return (
     <>
       <div className='app'>
-        <Link to='/'>Voltar</Link>
-        <img src={itemImage} alt='Imagem Produto' />
-        <p>
+        <Link to='/'><IoIosArrowBack className='icon' /></Link>
+        <div>
+          <img className='img-product' src={itemImage} alt='Imagem Produto' />
+        </div>
+        <p className='text-product'>
           <b>Nome: </b>
           {itemName}
         </p>
