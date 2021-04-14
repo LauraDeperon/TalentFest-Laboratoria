@@ -80,6 +80,12 @@ button {
 	background: transparent;
 }
 
+.img-close {
+	width: 1.8rem;
+	height: auto;
+	background-color: #d5ed50;
+}
+
 /* FOOTER */
 .footer {
 	width: 100vw;
