@@ -16,7 +16,7 @@ function Products() {
     if (products.length === 0) {
       List();
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function List() {
