@@ -13,7 +13,7 @@ function productsInformation() {
   const itemProcesses = JSON.parse(localStorage.getItem('itemProcesses'));
   return (
     <>
-      <div className='App'>
+      <div className='app'>
         <Link to='/'>Voltar</Link>
         <img src={itemImage} alt='Imagem Produto' />
         <p>
