@@ -4,7 +4,6 @@ import './products.css';
 import Footer from '../components/footer';
 import Header from '../components/header';
 import { Link } from 'react-router-dom';
-import productsInformation from '../components/productsInformation/productsInformation';
 import Chocolate from '../imagens/chocolate.png'
 import Atomatado from '../imagens/tomate.png'
 import Oleos from '../imagens/oleo.png'
