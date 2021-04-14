@@ -43,6 +43,7 @@ button {
 	top: 0;
 	padding: 1rem 1.5rem;
 	background: #d5e675;
+	box-shadow: 0px 4px 4px rgba(12, 12, 12, 0.15);
 }
 
 .btn-about {
@@ -50,23 +51,45 @@ button {
 	border: none;
 	outline: none;
 	background: transparent;
+	font-size: 1.2rem;
+	font-weight: 500;
 }
 
 .btn-about:hover {
 	color: #3d9d25;
-	font-weight: 700;
+	border-bottom: solid 2px #000;
+}
+
+/* MODAL */
+
+.modal {
+	outline: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: left;
+	padding: 1rem;
+	margin: 6rem auto;
+	background-color: #e4efa6;
+}
+
+.btn-close {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: transparent;
 }
 
 /* FOOTER */
 .footer {
 	width: 100vw;
 	position: fixed;
-	background-color: #d5e675;
 	bottom: 0;
 	padding: 0.4rem;
 	text-align: center;
 	line-height: 1.2rem;
 	font-size: 0.8rem;
+	background-color: #d5e675;
 }
 
 .link-footer {
@@ -77,4 +100,10 @@ button {
 
 .link-footer:hover {
 	border-bottom: solid 2px #000;
+}
+
+.products-section {
+}
+
+.product-type {
 }
