@@ -1,8 +1,8 @@
 import React from 'react';
-import './productsInformation.css';
+import './productInformation.css';
 import { Link } from 'react-router-dom';
 
-function productsInformation() {
+function productInformation() {
   const itemName = localStorage.getItem('itemName');
   const itemBrand = localStorage.getItem('itemBrand');
   const itemDescription = localStorage.getItem('itemDescription');
@@ -39,13 +39,9 @@ function productsInformation() {
           controls
           type='video/mp4'
         />
-        {/* <p>
-          <b>Receita</b>
-          {itemRecipe}
-        </p> */}
       </div>
     </>
   );
 }
 
-export default productsInformation;
+export default productInformation;

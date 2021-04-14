@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import getProducts from '../services/database';
-import './products.css';
-import Footer from '../components/footer';
-import Header from '../components/header';
+import getProducts from '../../services/firebaseServices';
+import './productsList.css';
 import { Link } from 'react-router-dom';
-import Chocolate from '../imagens/chocolate.png';
-import Atomatado from '../imagens/tomate.png';
-import Oleos from '../imagens/oleo.png';
+import Chocolate from '../../images/chocolate.png';
+import Atomatado from '../../images/tomate.png';
+import Oleos from '../../images/oleo.png';
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -37,7 +35,6 @@ function Products() {
 
   return (
     <>
-      <Header />
       <div className='Category'>
         <nav>
           <span>
@@ -98,7 +95,6 @@ function Products() {
             </div>
           );
         })}
-        <Footer />
       </div>
     </>
   );

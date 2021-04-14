@@ -1,8 +1,9 @@
-import Logo from '../imagens/logo.png';
-import Close from '../imagens/close.png';
+import './header.css'
+import Logo from '../../images/logo.png';
+import Close from '../../images/close.png';
 import Modal from 'react-modal';
 import { useState } from 'react';
-Modal.setAppElement('#root');
+
 
 Modal.setAppElement('#root');
 
