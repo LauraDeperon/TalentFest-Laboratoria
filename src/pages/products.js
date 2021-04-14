@@ -4,7 +4,7 @@ import './products.css';
 import Category from '../components/category';
 import Footer from '../components/footer';
 import Header from '../components/header';
-import productsInformation from '../components/productsInformation/productsInformation'
+import { Link } from 'react-router-dom';
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -27,11 +27,24 @@ function Products() {
         {products.map((item, index) => {
           return (
             <div key={index}>
-              {/* <p>{item.image}</p> */}
+              <img src={item.principalImage} alt='Imagem Produto' />
               <p>{item.name + ' ' + item.brand}</p>
-              <button onClick={() => productsInformation((item = { item }))}>
-                ver
-              </button>
+              <Link
+                to='/product'
+                onClick={() => {
+                  localStorage.setItem('itemName', item.name);
+                  localStorage.setItem('itemBrand', item.brand);
+                  localStorage.setItem('itemDescription', item.description);
+                  localStorage.setItem('itemRecipe', item.recipe);
+                  localStorage.setItem('itemImage', item.secondImage);
+                  localStorage.setItem(
+                    'itemProcesses',
+                    JSON.stringify(item.processes)
+                  );
+                }}
+              >
+                + Saiba Mais
+              </Link>
             </div>
           );
         })}
