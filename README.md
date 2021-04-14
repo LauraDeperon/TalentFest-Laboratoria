@@ -9,7 +9,7 @@ Acesse a aplicação aqui: _____
 - [Apresentação](#apresentação)
 - [Cargill](#cargill)
 - [Talent Fest](#talent-fest)
-- [Histórias de Usuário](#histórias-de-usuário)
+- [Histórias de Usuários](#histórias-de-usuários)
 - [Protótipos](#protótipos)
 - [Testes](#testes)
 - [Design](#design)
@@ -18,7 +18,7 @@ Acesse a aplicação aqui: _____
    * [Responsividade](#responsividade)
 - [Painel de Administração](#painel-de-administração)
 - [Planejamento](#planejamento)
-- [Tecnologias Utilizadas](#tecnologias-utilizados)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Futuras Implementações](#futuras-implementações)
 - [Desenvolvedoras](#desenvolvedoras)
 
@@ -115,9 +115,9 @@ Para as próximas refatorações iremos implementar:
 :pushpin:Espaço Fale Conosco, com contatos da empresa e formulario para enviar mensagens</br>
 :pushpin:Campo de busca por produto</br>
 
-## Desenvolvedoras 💛
+## Desenvolvedoras 
 
-A aplicação foi orgulhosamente desenvolvido por:<br>
+💛 A aplicação foi orgulhosamente desenvolvido por:<br>
 Bianca Sherika - [Linkedin](https://www.linkedin.com/in/bianca-sherika-cavalcante-claro/) /[GitHub](https://www.github.com/BiancaSherika)<br>
 Caroline Costa - [Linkedin](https://www.linkedin.com/in/carolinescosta/) /[GitHub](https://www.github.com/CarolineSCosta)<br>
 Karine Venerando - [Linkedin](https://www.linkedin.com/in/karine-venerando/) /[GitHub](https://www.github.com/karinesouza)<br>
