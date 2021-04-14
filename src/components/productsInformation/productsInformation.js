@@ -1,5 +1,4 @@
 import React from 'react';
-import './productsInformation.css';
 import { Link } from 'react-router-dom';
 
 function productsInformation() {
@@ -11,7 +10,7 @@ function productsInformation() {
   const itemProcesses = JSON.parse(localStorage.getItem('itemProcesses'));
   return (
     <>
-      <div className='App'>
+      <div className='app'>
         <Link to='/'>Voltar</Link>
         <img src={itemImage} alt='Imagem Produto' />
         <p>
