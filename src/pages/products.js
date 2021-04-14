@@ -1,50 +1,44 @@
 import React, { useEffect, useState } from 'react';
-import getProducts from "../services/database"
+import getProducts from '../services/database';
 import './products.css';
-import Category from '../components/category'
-import Footer from '../components/footer'
-import Header from '../components/header'
-
-
-
+import Category from '../components/category';
+import Footer from '../components/footer';
+import Header from '../components/header';
+import ProductsInformation from '../components/productsInformation/productsInformation'
 
 function Products() {
-
   const [products, setProducts] = useState([]);
 
-
   useEffect(() => {
-    
-    getProducts().then((result) => {
-      result.docs.forEach((doc) => {
-         setProducts(obj => [...obj, doc.data()]);
-            })
-      
-    })
-    console.log(products)
-  }, [])
+    if (products.length === 0) {
+      getProducts().then((result) => {
+        result.docs.forEach((doc) => {
+          setProducts((obj) => [...obj, doc.data()]);
+        });
+      });
+    }
+  }, [products]);
 
-console.log(products)
   return (
     <>
+      <Header />
+      <Category />
       <div className='App'>
-        <header className='App-header'>
-          <h1>Olá</h1>
-          <button onClick={() => {console.log(getProducts())}}>click</button>
-{/*           {products.(function (item) {
-            return (
-              <div key={item.id}>
-              </div>
-            )
-          })} */}
-        </header>
-        <Header/>
-      <Category/>
-      <Footer/>
-
+        {products.map((item, index) => {
+          return (
+            <div key={index}>
+              {/* <p>{item.image}</p> */}
+              <p>{item.name + ' ' + item.brand}</p>
+              <button onClick={() => ProductsInformation((item = { item }))}>
+                ver
+              </button>
+            </div>
+          );
+        })}
+        <Footer />
       </div>
     </>
-  )
+  );
 }
 
 
