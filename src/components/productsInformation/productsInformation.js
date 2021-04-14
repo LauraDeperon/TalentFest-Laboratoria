@@ -1,5 +1,8 @@
 import React from 'react';
+import './productsInformation.css';
 import { Link } from 'react-router-dom';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/themes/splide-sea-green.min.css';
 
 function productsInformation() {
   const itemName = localStorage.getItem('itemName');
@@ -28,9 +31,13 @@ function productsInformation() {
         <p>
           <b>Processos de Produção: </b>
         </p>
-        {itemProcesses.map((process, index) => (
-          <p key={index}>{process}</p>
-        ))}
+        <Splide>
+          {itemProcesses.map((process, index) => (
+            <SplideSlide>
+              <p key={index}>{process}</p>
+            </SplideSlide>
+          ))}
+        </Splide>
         <video
           src={itemRecipe}
           width='320'
