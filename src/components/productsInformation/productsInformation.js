@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { IoIosArrowBack } from "react-icons/io";
+import Header from '../header'
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/themes/splide-sea-green.min.css';
 
 function productsInformation() {
   const itemName = localStorage.getItem('itemName');
@@ -11,40 +14,38 @@ function productsInformation() {
   const itemProcesses = JSON.parse(localStorage.getItem('itemProcesses'));
   return (
     <>
-      <div className='app'>
+      <Header />
+      <div>
         <Link to='/'><IoIosArrowBack className='icon' /></Link>
-        <div>
+        <div className='container-text'>
+          <p className='text-product'>
+            {itemName}{itemBrand}
+          </p>
+        </div>
+        <div className='product-container'>
           <img className='img-product' src={itemImage} alt='Imagem Produto' />
         </div>
-        <p className='text-product'>
-          <b>Nome: </b>
-          {itemName}
-        </p>
-        <p>
-          <b>Marca: </b>
-          {itemBrand}
-        </p>
-        <p>
-          <b>Descrição: </b>
+        <p className='product-titles'>Conheça o produto</p>
+        <p className='about-product'>
           {itemDescription}
         </p>
-        <p>
-          <b>Processos de Produção: </b>
+        <p className='product-titles'>
+          Como é feito
         </p>
-        {itemProcesses.map((process, index) => (
-          <p key={index}>{process}</p>
-        ))}
+        <Splide>
+          {itemProcesses.map((process, index) => (
+            <SplideSlide className='carousel-container'>
+              <p className='carousel' key={index}>{process}</p>
+            </SplideSlide>
+          ))}
+        </Splide>
+        <p className='product-titles'>Receita para te inspirar</p>
         <video
           src={itemRecipe}
-          width='320'
-          height='240'
           controls
           type='video/mp4'
+          className='video'
         />
-        {/* <p>
-          <b>Receita</b>
-          {itemRecipe}
-        </p> */}
       </div>
     </>
   );

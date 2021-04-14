@@ -9,7 +9,6 @@ Tablet paisagem e Desktop -- min-width: 900px
 */
 
 /* CSS RESET */
-
 * {
 	margin: 0;
 	padding: 0;
@@ -17,7 +16,6 @@ Tablet paisagem e Desktop -- min-width: 900px
 }
 
 /* GENERAL STYLING */
-
 html {
 	height: 100%;
 	width: 100%;
@@ -74,11 +72,15 @@ a {
 	outline: none;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	text-align: left;
 	padding: 1rem;
 	margin: 6rem auto;
 	background-color: #e4efa6;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: flex-end;
 }
 
 .btn-close {
@@ -89,9 +91,11 @@ a {
 }
 
 .img-close {
-	cursor: pointer;
 	width: 1.8rem;
 	height: auto;
+}
+
+.img-close:hover {
 	background-color: #d5ed50;
 }
 
@@ -99,7 +103,7 @@ a {
 
 .category-title {
 	margin-top: 2.2rem;
-	margin-left: 0.7rem;
+	margin-left: 1.2rem;
 	margin-bottom: 1rem;
 	font-size: 1.2rem;
 	font-weight: 500;
@@ -107,7 +111,7 @@ a {
 .category {
 	display: flex;
 	justify-content: space-evenly;
-	margin: 1rem 0.7rem;
+	margin: 0 auto;
 	align-items: center;
 }
 
@@ -151,18 +155,84 @@ a {
 
 .text-product-card {
 	text-align: center;
-	padding: 0.5rem;
+	padding-top: 0.4rem;
+	padding-bottom: 0.7rem;
 	font-size: 1rem;
 	font-weight: 500;
 	margin-top: 0.3rem;
 }
 
-/* PRODUCT DETAILS */
+/* PRODUCT INFO */
+
+.container-text {
+	display: flex;
+	text-align: center;
+}
+
+.text-product {
+	margin: 0 auto;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
 
 .img-product {
-	background-color: purple;
-	width: 65vw;
+	display: flex;
+	justify-content: center;
+	width: 70vw;
 	height: auto;
+	margin: 1.2rem auto;
+}
+
+.icon {
+	margin-top: 1rem;
+	margin-left: 0.5rem;
+	color: #20211b;
+	font-size: 1.5rem;
+}
+
+.product-titles {
+	margin: 1rem;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.about-product {
+	width: 90vw;
+	margin: 0 1rem;
+	justify-items: center;
+	padding-bottom: 0.7rem;
+}
+
+.carousel-container {
+	width: auto;
+	height: 8rem;
+	background-color: #467302;
+	display: flex;
+	justify-content: center;
+	border-radius: 10px;
+	align-items: center;
+}
+
+.carousel {
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 1rem;
+	color: #dce3af;
+}
+
+.splide__arrow svg {
+	fill: #515538 !important;
+}
+
+/* VIDEO */
+
+.video {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 90vw;
+	height: auto;
+	padding-bottom: 1.5rem;
 }
 
 /* FOOTER */
@@ -179,6 +249,7 @@ a {
 
 .link-footer {
 	color: #20211b;
+	font-weight: 600;
 	font-size: 0.8rem;
 	text-decoration: none;
 }

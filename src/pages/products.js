@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import getProducts from '../services/database';
-import './products.css';
 import Footer from '../components/footer';
 import Header from '../components/header';
 import { Link } from 'react-router-dom';
@@ -91,5 +90,9 @@ function Products() {
     </>
   );
 }
+
+
+
+
 
 export default Products;
