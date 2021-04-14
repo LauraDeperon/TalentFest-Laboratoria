@@ -14,14 +14,10 @@ function Products() {
 
   useEffect(() => {
     if (products.length === 0) {
-      getProducts().then((result) => {
-        result.docs.forEach((doc) => {
-          setProducts((obj) => [...obj, doc.data()]);
-          setFilter((obj) => [...obj, doc.data()]);
-        });
-      });
+      List();
     }
-  }, [products]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   function List() {
     setProducts([]);
