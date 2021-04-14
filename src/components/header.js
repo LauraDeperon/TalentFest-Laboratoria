@@ -4,6 +4,8 @@ import Modal from 'react-modal';
 import { useState } from 'react';
 Modal.setAppElement('#root')
 
+Modal.setAppElement('#root')
+
 function Header() {
   const [modalIsOpen, setModalIsOpen] = useState(false)
   function closeModalSobre() {

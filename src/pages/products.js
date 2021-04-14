@@ -3,6 +3,7 @@ import getProducts from '../services/database';
 import './products.css';
 import Footer from '../components/footer';
 import Header from '../components/header';
+import { Link } from 'react-router-dom';
 import productsInformation from '../components/productsInformation/productsInformation';
 import Chocolate from '../imagens/chocolate.png'
 import Atomatado from '../imagens/tomate.png'
@@ -58,10 +59,24 @@ function Products() {
         {filter.map((item, index) => {
           return (
             <div key={index}>
+              <img src={item.principalImage} alt='Imagem Produto' />
               <p>{item.name + ' ' + item.brand}</p>
-              <button onClick={() => productsInformation((item = { item }))}>
-                ver
-              </button>
+              <Link
+                to='/product'
+                onClick={() => {
+                  localStorage.setItem('itemName', item.name);
+                  localStorage.setItem('itemBrand', item.brand);
+                  localStorage.setItem('itemDescription', item.description);
+                  localStorage.setItem('itemRecipe', item.recipe);
+                  localStorage.setItem('itemImage', item.secondImage);
+                  localStorage.setItem(
+                    'itemProcesses',
+                    JSON.stringify(item.processes)
+                  );
+                }}
+              >
+                + Saiba Mais
+              </Link>
             </div>
           );
         })}
