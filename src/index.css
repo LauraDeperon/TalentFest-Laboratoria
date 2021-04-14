@@ -57,12 +57,13 @@ button {
 
 .btn-about:hover {
 	color: #3d9d25;
-	border-bottom: solid 2px #000;
 }
 
 /* MODAL */
 
 .modal {
+	width: 70vw;
+	height: auto;
 	outline: none;
 	display: flex;
 	flex-direction: column;
@@ -86,6 +87,43 @@ button {
 	background-color: #d5ed50;
 }
 
+/* CATEGORIES BAR */
+
+.category-title {
+	margin-top: 3rem;
+	margin-left: 1.2rem;
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+.category {
+	background-color: lightcoral;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+}
+
+.img-product-category {
+	background-color: pink;
+	margin-top: 0.5rem;
+	border-radius: 0.3rem;
+	width: 5rem;
+	height: auto;
+	flex-grow: 1;
+}
+
+.product-category {
+	background-color: powderblue;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.category-info {
+	width: 10rem;
+	background-color: palegreen;
+	text-align: center;
+}
+
 /* FOOTER */
 .footer {
 	width: 100vw;
@@ -95,7 +133,7 @@ button {
 	text-align: center;
 	line-height: 1.2rem;
 	font-size: 0.8rem;
-	background-color: #d5e675;
+	background-color: #edf4c4;
 }
 
 .link-footer {
@@ -105,11 +143,5 @@ button {
 }
 
 .link-footer:hover {
-	border-bottom: solid 2px #000;
-}
-
-.products-section {
-}
-
-.product-type {
+	color: #68ab03;
 }
