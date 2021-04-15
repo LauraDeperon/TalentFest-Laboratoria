@@ -1,6 +1,6 @@
 # Talent Fest - Cargill
 
-Acesse a aplicação aqui:
+<p align="center"> Acesse a aplicação <a href="https://tf-cargill.web.app/">aqui</a> ou </p>
 <p align="center"> <img src="./src/images/frame.png" width="200" /> </p>
 
 ## Índice
