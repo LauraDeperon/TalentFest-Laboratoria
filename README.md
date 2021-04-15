@@ -54,9 +54,8 @@ O aplicativo foi realizado baseado nas seguintes histórias de usuários:
 
 Os protótipos foram criados através da ferramenta Figma, utilizando o conceito de mobile first.
 
-<p align="center"> <img src="./src/images/protótipoPrincipal.jpeg" width="400" /> </p>
-
-<p align="center"> <img src="./src/images/protótipoSecundária.jpeg" width="400" /> </p>
+<p align="center"> <img src="./src/images/protótipoPrincipal.jpeg" width="258" />     
+      <img src="./src/images/protótipoSecundária.jpeg" width="250" /> </p>
 
 ## Testes
 
