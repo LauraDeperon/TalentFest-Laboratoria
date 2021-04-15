@@ -1,8 +1,7 @@
 # Talent Fest - Cargill
 
-[GIF]
-
-Acesse a aplicação aqui: **\_**
+Acesse a aplicação aqui:
+<p align="center"> <img src="./src/imagens/frame.png" width="200" /> </p>
 
 ## Índice
 
@@ -53,11 +52,11 @@ O aplicativo foi realizado baseado nas seguintes histórias de usuários:
 
 ## Protótipos
 
-Os protótipos foram criados com o Figma em mobile first.
+Os protótipos foram criados através da ferramenta Figma, utilizando o conceito de mobile first.
 
-<p align="center"> <img src="./src/imagens/protótipoPrincipal.png" width="500" /> </p>
+<p align="center"> <img src="./src/imagens/protótipoPrincipal.jpeg" width="500" /> </p>
 
-<p align="center"> <img src="./src/imagens/protótipoSecundária.png" width="500" /> </p>
+<p align="center"> <img src="./src/imagens/protótipoSecundária.jpeg" width="500" /> </p>
 
 ## Testes
 
@@ -71,9 +70,35 @@ Ao longo do processo de prototipagem, realizamos testes e recebemos os seguintes
 
 ## Design
 
+A identidade Visual da aplicação seguiu conceitos de User Experience, testes de usabilidade, testes de produto e code review in par.
+
+### Cores 
+
+A paleta de cores escolhida seguiu a identidade da empresa.
+
+<p align="center"> <img src="./src/imagens/paleta.png" width="800" /> </p>
+
+### Interface
+
+A interface finalizou desta forma:
+
+<p align="center"> <img src="./src/imagens/desktop.gif" width="800" /> </p>
+
+### Responsividade
+
+A responsividade para mobile finalizou desta forma:
+
+<p align="center"> <img src="./src/imagens/mobile.gif" width="500" /> </p>
+
 ## Painel de administração
 
-Utilizamos o Firebase como banco de dados e como um painel de administração, onde é possível incluir, deletar e alterar informações.
+Utilizamos o Firebase como banco de dados e como painel de administração, onde é possível incluir, deletar e alterar informações. A descrição e categorização dos produtos feita pelo Firestore do firebase, é exemplificada abaixo:
+
+<p align="center"> <img src="./src/imagens/dashboardBack.png" width="800" /> </p>
+
+Armazenamento de imagens e videos foi realizado pelo Storage do Firebase:
+
+<p align="center"> <img src="./src/imagens/dashboardBackImagens.png" width="800" /> </p>
 
 ## Planejamento
 
@@ -101,12 +126,12 @@ O planejamento e a divisão de tarefas foram feitos através do Trello.
 
 Para as próximas refatorações iremos implementar:
 
-:pushpin:Espaço Fale Conosco, com contatos da empresa e formulario para enviar mensagens</br>
+:pushpin:Espaço Fale Conosco, com contatos da empresa e formulário para enviar mensagens</br>
 :pushpin:Campo de busca por produto</br>
 
 ## Desenvolvedoras
 
-💛 A aplicação foi orgulhosamente desenvolvido por:<br>
+💛 Esta aplicação foi orgulhosamente desenvolvida pelas devas:<br>
 Bianca Sherika - [Linkedin](https://www.linkedin.com/in/bianca-sherika-cavalcante-claro/) /[GitHub](https://www.github.com/BiancaSherika)<br>
 Caroline Costa - [Linkedin](https://www.linkedin.com/in/carolinescosta/) /[GitHub](https://www.github.com/CarolineSCosta)<br>
 Karine Venerando - [Linkedin](https://www.linkedin.com/in/karine-venerando/) /[GitHub](https://www.github.com/karinesouza)<br>
