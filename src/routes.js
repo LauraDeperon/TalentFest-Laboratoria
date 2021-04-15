@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import Products from './pages/products.js';
-import productsInformation from './components/productsInformation/productsInformation';
+import productsInformation from './pages/productsInformation';
 
 const Routes = () => {
   return (

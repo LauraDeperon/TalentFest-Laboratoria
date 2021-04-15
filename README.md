@@ -2,7 +2,7 @@
 
 [GIF]
 
-Acesse a aplicação aqui: _____
+Acesse a aplicação aqui: **\_**
 
 ## Índice
 
@@ -13,9 +13,9 @@ Acesse a aplicação aqui: _____
 - [Protótipos](#protótipos)
 - [Testes](#testes)
 - [Design](#design)
-   * [Cores](#cores)
-   * [Interface](#interface)
-   * [Responsividade](#responsividade)
+  - [Cores](#cores)
+  - [Interface](#interface)
+  - [Responsividade](#responsividade)
 - [Painel de Administração](#painel-de-administração)
 - [Planejamento](#planejamento)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -26,21 +26,18 @@ Acesse a aplicação aqui: _____
 
 ## Apresentação
 
-Você já se perguntou como os produtos do mercado são feitos até chegarem no seu carrinho ? Pois então encontrou a resposta ! 
+Você já se perguntou como os produtos do mercado são feitos até chegarem no seu carrinho ? Pois então encontrou a resposta !
 Com objetivo de disponibilizar informações e aumentar transparência da empresa, a [Cargill](https://www.cargill.com.br) nos desafiou a desenvolver uma aplicação web que demonstre como seus produtos alimentícios são feitos, desde o campo até a mesa do cliente final. Projeto realizado sob demanda da empresa, foi desenvolvido no evento Talent Fest promovido pela [<Laboratória>](https://www.laboratoria.la/br).
 
-
-
 ## Cargill
- 
-A Cargill oferece serviços e produtos alimentícios, agrícolas, financeiros e industriais ao mundo. Juntamente com produtores rurais, clientes, governos e comunidades, ajuda as pessoas a prosperar com a aplicação de suas ideias há mais de 155 anos. Tem 155.000 funcionários em 70 países, que estão comprometidos a fornecer alimentos ao mundo de uma forma responsável, reduzindo o impacto ambiental e melhorando as comunidades onde atuam.
-<p align="center"> <img src="./src/imagens/logo.png" width="200" /> </p>
 
+A Cargill oferece serviços e produtos alimentícios, agrícolas, financeiros e industriais ao mundo. Juntamente com produtores rurais, clientes, governos e comunidades, ajuda as pessoas a prosperar com a aplicação de suas ideias há mais de 155 anos. Tem 155.000 funcionários em 70 países, que estão comprometidos a fornecer alimentos ao mundo de uma forma responsável, reduzindo o impacto ambiental e melhorando as comunidades onde atuam.
+
+<p align="center"> <img src="./src/imagens/logo.png" width="200" /> </p>
 
 ## Talent Fest
 
 O [Talent Fest](https://talentfest.laboratoria.la/br) é um hackathon organizado pela Laboratória ao final de cada bootcamp para conectar as alunas ao mercado de tecnologia. É o espaço perfeito para que as empresas conheçam o potencial do talento feminino da Laboratória, pois as estudantes trabalham com cases reais propostos pelas organizações participantes. A quinta edição do evento ocorreu entre os dias 12 e 15 de abril de 2021 de maneira remota e foi exibido em tempo real no [Youtube](https://www.youtube.com/watch?v=I4quRx-Nrs4).
-
 
 ## Histórias De Usuários
 
@@ -54,18 +51,13 @@ O aplicativo foi realizado baseado nas seguintes histórias de usuários:
 
 - Eu como cozinheiro quero conhecer uma receita com o produto que comprei.
 
-
-## Protótipos 
+## Protótipos
 
 Os protótipos foram criados com o Figma em mobile first.
 
 <p align="center"> <img src="./src/imagens/protótipoPrincipal.png" width="500" /> </p>
 
 <p align="center"> <img src="./src/imagens/protótipoSecundária.png" width="500" /> </p>
-
-
-
-
 
 ## Testes
 
@@ -79,11 +71,9 @@ Ao longo do processo de prototipagem, realizamos testes e recebemos os seguintes
 
 ## Design
 
-
 ## Painel de administração
 
 Utilizamos o Firebase como banco de dados e como um painel de administração, onde é possível incluir, deletar e alterar informações.
-
 
 ## Planejamento
 
@@ -95,7 +85,7 @@ O planejamento e a divisão de tarefas foram feitos através do Trello.
 
 - HTML
 - CSS
-- JavaScript 
+- JavaScript
 - ReactJs
 - React Hooks
 - React Router
@@ -107,7 +97,6 @@ O planejamento e a divisão de tarefas foram feitos através do Trello.
 - Figma
 - Zoom
 
-
 ## Futuras Implementações
 
 Para as próximas refatorações iremos implementar:
@@ -115,7 +104,7 @@ Para as próximas refatorações iremos implementar:
 :pushpin:Espaço Fale Conosco, com contatos da empresa e formulario para enviar mensagens</br>
 :pushpin:Campo de busca por produto</br>
 
-## Desenvolvedoras 
+## Desenvolvedoras
 
 💛 A aplicação foi orgulhosamente desenvolvido por:<br>
 Bianca Sherika - [Linkedin](https://www.linkedin.com/in/bianca-sherika-cavalcante-claro/) /[GitHub](https://www.github.com/BiancaSherika)<br>
@@ -123,19 +112,3 @@ Caroline Costa - [Linkedin](https://www.linkedin.com/in/carolinescosta/) /[GitHu
 Karine Venerando - [Linkedin](https://www.linkedin.com/in/karine-venerando/) /[GitHub](https://www.github.com/karinesouza)<br>
 Laura Deperon - [Linkedin](https://www.linkedin.com/in/lauradeperon/)/ [GitHub](https://www.github.com/LauraDeperon)<br>
 Priscila Silveira - [Linkedin](https://www.linkedin.com/in/priscilassilveira/)/[GitHub](https://www.github.com/PriscilaSSilveira)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
