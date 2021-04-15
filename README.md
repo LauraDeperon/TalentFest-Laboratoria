@@ -1,7 +1,7 @@
 # Talent Fest - Cargill
 
 Acesse a aplicação aqui:
-<p align="center"> <img src="./src/imagens/frame.png" width="200" /> </p>
+<p align="center"> <img src="./src/images/frame.png" width="200" /> </p>
 
 ## Índice
 
@@ -32,7 +32,7 @@ Com objetivo de disponibilizar informações e aumentar transparência da empres
 
 A Cargill oferece serviços e produtos alimentícios, agrícolas, financeiros e industriais ao mundo. Juntamente com produtores rurais, clientes, governos e comunidades, ajuda as pessoas a prosperar com a aplicação de suas ideias há mais de 155 anos. Tem 155.000 funcionários em 70 países, que estão comprometidos a fornecer alimentos ao mundo de uma forma responsável, reduzindo o impacto ambiental e melhorando as comunidades onde atuam.
 
-<p align="center"> <img src="./src/imagens/logo.png" width="200" /> </p>
+<p align="center"> <img src="./src/images/logo.png" width="200" /> </p>
 
 ## Talent Fest
 
@@ -54,9 +54,9 @@ O aplicativo foi realizado baseado nas seguintes histórias de usuários:
 
 Os protótipos foram criados através da ferramenta Figma, utilizando o conceito de mobile first.
 
-<p align="center"> <img src="./src/imagens/protótipoPrincipal.jpeg" width="500" /> </p>
+<p align="center"> <img src="./src/images/protótipoPrincipal.jpeg" width="500" /> </p>
 
-<p align="center"> <img src="./src/imagens/protótipoSecundária.jpeg" width="500" /> </p>
+<p align="center"> <img src="./src/images/protótipoSecundária.jpeg" width="500" /> </p>
 
 ## Testes
 
@@ -76,35 +76,35 @@ A identidade Visual da aplicação seguiu conceitos de User Experience, testes d
 
 A paleta de cores escolhida seguiu a identidade da empresa.
 
-<p align="center"> <img src="./src/imagens/paleta.png" width="800" /> </p>
+<p align="center"> <img src="./src/images/paleta.png" width="800" /> </p>
 
 ### Interface
 
 A interface finalizou desta forma:
 
-<p align="center"> <img src="./src/imagens/desktop.gif" width="800" /> </p>
+<p align="center"> <img src="./src/images/desktop.gif" width="800" /> </p>
 
 ### Responsividade
 
 A responsividade para mobile finalizou desta forma:
 
-<p align="center"> <img src="./src/imagens/mobile.gif" width="500" /> </p>
+<p align="center"> <img src="./src/images/mobile.gif" width="500" /> </p>
 
 ## Painel de administração
 
 Utilizamos o Firebase como banco de dados e como painel de administração, onde é possível incluir, deletar e alterar informações. A descrição e categorização dos produtos feita pelo Firestore do firebase, é exemplificada abaixo:
 
-<p align="center"> <img src="./src/imagens/dashboardBack.png" width="800" /> </p>
+<p align="center"> <img src="./src/images/dashboardBack.png" width="800" /> </p>
 
 Armazenamento de imagens e videos foi realizado pelo Storage do Firebase:
 
-<p align="center"> <img src="./src/imagens/dashboardBackImagens.png" width="800" /> </p>
+<p align="center"> <img src="./src/images/dashboardBackImagens.png" width="800" /> </p>
 
 ## Planejamento
 
 O planejamento e a divisão de tarefas foram feitos através do Trello.
 
-<img src="./src/imagens/trello.jpeg" width="800" />
+<img src="./src/images/trello.jpeg" width="800" />
 
 ## Tecnologias Utilizadas
 
