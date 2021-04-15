@@ -19,20 +19,20 @@ function productsInformation() {
         <Link to='/'><IoIosArrowBack className='icon' /></Link>
         <div className='container-text'>
           <p className='text-product'>
-            {itemName}{itemBrand}
+            {itemName} {itemBrand}
           </p>
         </div>
         <div className='product-container'>
           <img className='img-product' src={itemImage} alt='Imagem Produto' />
         </div>
-        <p className='product-titles'>Conheça o produto</p>
+        <p className='product-titles'>Conheça nosso produto</p>
         <p className='about-product'>
           {itemDescription}
         </p>
         <p className='product-titles'>
           Como é feito
         </p>
-        <Splide>
+        <Splide className='carousel-div'>
           {itemProcesses.map((process, index) => (
             <SplideSlide className='carousel-container'>
               <p className='carousel' key={index}>{process}</p>

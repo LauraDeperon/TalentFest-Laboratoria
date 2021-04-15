@@ -116,6 +116,7 @@ a {
 }
 
 .img-product-category {
+	cursor: pointer;
 	margin-top: 0.5rem;
 	border-radius: 0.3rem;
 	width: 3rem;
@@ -127,21 +128,27 @@ a {
 	font-size: 0.8rem;
 	font-weight: 500;
 	margin-top: 0.3rem;
-}
-
-.category-info {
-	width: 5rem;
 	text-align: center;
 }
 
+.category-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 /* PRODUCT CARD */
+
+.product-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
 
 .product-card {
 	width: 92vw;
 	height: auto;
 	background-color: #e1ed9c;
-	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	border-radius: 10px 10px 10px 10px;
 	margin: 1.5rem auto;
@@ -149,6 +156,7 @@ a {
 }
 
 .img-product-card {
+	width: 92vw;
 	border-radius: 10px 10px 0 0;
 	flex-grow: 1;
 }
@@ -173,6 +181,7 @@ a {
 	margin: 0 auto;
 	font-size: 1.1rem;
 	font-weight: 600;
+	padding-bottom: 1rem;
 }
 
 .img-product {
@@ -184,6 +193,7 @@ a {
 }
 
 .icon {
+	cursor: pointer;
 	margin-top: 1rem;
 	margin-left: 0.5rem;
 	color: #20211b;
@@ -199,6 +209,7 @@ a {
 .about-product {
 	width: 90vw;
 	margin: 0 1rem;
+	font-size: 1rem;
 	justify-items: center;
 	padding-bottom: 0.7rem;
 }
@@ -244,6 +255,7 @@ a {
 	text-align: center;
 	line-height: 1.2rem;
 	font-size: 0.8rem;
+	font-weight: 400;
 	background-color: #edf4c4;
 }
 
@@ -256,4 +268,78 @@ a {
 
 .link-footer:hover {
 	color: #68ab03;
+}
+
+@media (min-width: 900px) {
+	.navbar {
+		padding: 1.2rem 5rem;
+	}
+	.btn-about {
+		font-size: 1.4rem;
+		font-weight: 600;
+	}
+	.modal {
+		width: 25vw;
+		padding-bottom: 1.5rem;
+		font-size: 1.3rem;
+	}
+	.category-title {
+		margin-bottom: 0;
+		margin-left: 3rem;
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+	.product-category {
+		font-size: 1.2rem;
+	}
+	.img-product-category {
+		width: 4.7rem;
+	}
+	.product-card {
+		width: 25vw;
+		margin: 1rem;
+	}
+	.img-product-card {
+		width: 25vw;
+	}
+	.product-container {
+		margin: 2rem 0;
+		justify-content: center;
+	}
+	.text-product-card,
+	.product-titles,
+	.about-product {
+		margin-left: 2rem;
+		font-size: 1.2rem;
+	}
+	.text-product {
+		font-size: 1.4rem;
+		padding-bottom: 0;
+	}
+	.img-product {
+		width: 40vw;
+	}
+	.carousel {
+		font-size: 1.4rem;
+	}
+	.carousel-div {
+		margin: 0 11.5rem;
+	}
+	.video {
+		margin-top: 4rem;
+		width: 70vw;
+		height: auto;
+	}
+	.footer {
+		position: fixed;
+		padding: 1.5rem;
+		font-size: 1rem;
+		font-weight: 500;
+	}
+	.link-footer {
+		font-size: 1rem;
+	}
+	.icon {
+		font-size: 3rem;
+	}
 }

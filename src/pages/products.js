@@ -61,30 +61,32 @@ function Products() {
         </div>
 
       </nav>
-      <div className='App'>
-        {filter.map((item, index) => {
-          return (
-            <Link
-              to='/product'
-              onClick={() => {
-                localStorage.setItem('itemName', item.name);
-                localStorage.setItem('itemBrand', item.brand);
-                localStorage.setItem('itemDescription', item.description);
-                localStorage.setItem('itemRecipe', item.recipe);
-                localStorage.setItem('itemImage', item.secondImage);
-                localStorage.setItem(
-                  'itemProcesses',
-                  JSON.stringify(item.processes)
-                );
-              }}
-            >
-              <div className='product-card' key={index}>
-                <img className='img-product-card' src={item.principalImage} alt='Imagem Produto' />
-                <p className='text-product-card'>{item.name + ' ' + item.brand}</p>
-              </div>
-            </Link>
-          );
-        })}
+      <div className='app'>
+        <div className='product-container'>
+          {filter.map((item, index) => {
+            return (
+              <Link
+                to='/product'
+                onClick={() => {
+                  localStorage.setItem('itemName', item.name);
+                  localStorage.setItem('itemBrand', item.brand);
+                  localStorage.setItem('itemDescription', item.description);
+                  localStorage.setItem('itemRecipe', item.recipe);
+                  localStorage.setItem('itemImage', item.secondImage);
+                  localStorage.setItem(
+                    'itemProcesses',
+                    JSON.stringify(item.processes)
+                  );
+                }}
+              >
+                <div className='product-card' key={index}>
+                  <img className='img-product-card' src={item.principalImage} alt='Imagem Produto' />
+                  <p className='text-product-card'>{item.name + ' ' + item.brand}</p>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
         <Footer />
       </div>
     </>
