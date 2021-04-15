@@ -343,3 +343,9 @@ a {
 		font-size: 3rem;
 	}
 }
+
+@media (max-width: 899px) {
+	.product-container {
+		flex-direction: column;
+	}
+}
